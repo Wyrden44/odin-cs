@@ -1,4 +1,4 @@
-function mergeSort(arr) {
+export default function mergeSort(arr) {
     // base case
     if (arr.length === 1) {
         return arr;
@@ -37,7 +37,7 @@ function mergeSort(arr) {
     return arr;
 }
 
-function getRandomArray() {
+export function getRandomArray() {
     let arr = [];
 
     for (let i=0; i<Math.floor(Math.random() * 10)+2; i++) {
@@ -47,7 +47,6 @@ function getRandomArray() {
     return arr;
 }
 
-// print process.argv
-let arr = getRandomArray();
-console.log("Input:", arr);
-console.log("Output:", mergeSort(arr));
+// let arr = getRandomArray();
+// console.log("Input:", arr);
+// console.log("Output:", mergeSort(arr));
